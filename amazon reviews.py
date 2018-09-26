@@ -33,7 +33,7 @@ X_train, X_test, y_train, y_test = train_test_split(df['Reviews'],
 #print(X_train)
 
 
-# # the bag of words approach
+ # the bag of words approach
 # it do not focuses on structure, but it counts the no. of times the word is repeating
 
 # # CountVectorizer- It allows us to use the bag-of-words approach by converting a collection of text documents into a matrix of token counts. 
