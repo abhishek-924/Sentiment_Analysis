@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+df=pd.read_csv('C:\ghost drive\study\ds\sentiment analysis\Amazon_Unlocked_Mobile.csv')
+
+#drops empty rows
+df.dropna(inplace=True) 
+
+
+#gives rows where rating is 3
+df=df[df['Rating']!=3] 
+
+#create a column where '1' is for rating >3 and '0' is for rating<3
+df['positive or negative']=np.where(df['Rating']>3,1,0)
