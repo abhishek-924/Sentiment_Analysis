@@ -5,7 +5,7 @@ df=pd.read_csv('C:\ghost drive\study\ds\sentiment analysis\Amazon_Unlocked_Mobil
 df.dropna(inplace=True) 
 df=df[df['Rating']!=3] 
 df['positive or negative']=np.where(df['Rating']>3,1,0)
-
+#random experiment
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(df['Reviews'], df['positive or negative'], random_state=0)
 print(X_train)
