@@ -51,5 +51,5 @@ sorted_coef_index = model.coef_[0].argsort()
 print('Smallest Coefs:\n{}\n'.format(feature_names[sorted_coef_index[:10]]))
 print('Largest Coefs: \n{}'.format(feature_names[sorted_coef_index[:-11:-1]]))
 print(model.predict(vect.transform(['not an issue, phone is working',
-                                    'it is not working fine'])))
+                                    'it is not working fine','dream on'])))
 
