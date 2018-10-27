@@ -9,6 +9,7 @@ df['positive or negative']=np.where(df['Rating']>3,1,0)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(df['Reviews'], df['positive or negative'], random_state=0)
 print(X_train)
+#prints the necessary
 
 
 from sklearn.feature_extraction.text import CountVectorizer
