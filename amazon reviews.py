@@ -16,7 +16,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 count=CountVectorizer().fit(X_train)
 count.get_feature_names()[::200]
-
+#hell yeah
 transform_matrix=count.transform(X_train)
 transform_matrix
 
