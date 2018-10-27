@@ -28,6 +28,7 @@ predictions=model.predict(count.transform(X_test))
 predictions
 
 print(roc_auc_score(predictions,y_test))
+#imma get that tshirt
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 vect = TfidfVectorizer(min_df=5).fit(X_train)
